@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMAZON PROJECT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select"> 
+                    <option>All</option>
+                </select>
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+           <div class="nav-return border">
+              <p><span>Return</span></p>
+              <p><span>& Orders<span></span></p>
+           </div>
+
+           <div class="nav-cart border">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Cart
+           </div>
+            
+           <button class="upload-btn">
+              <i class="bi bi-camera-fill"></i>
+              Upload Photo
+           </button>
+        </div>
+
+        <div class="panel">
+            
+
+            <div class="menu-icon" onclick="openMenu()">
+               ☰ All
+            </div>
+
+            <div id="sideMenu" class="side-menu">
+                <span class="close-btn" onclick="closeMenu()">&times;</span>
+
+                  <h3>Hello, Sign in</h3>
+
+                  <h2>Trending</h2>
+                  <a href="#">Best Sellers</a>
+                  <a href="#">New Releases</a>
+
+                  <h2>Digital Content and Devices</h2>
+                  <a href="#">Mobiles</a>
+                  <a href="#">Electronics</a>
+                  <a href="#">Fashion</a>
+
+                  <h2>Shop by Category</h2>
+                  <a href="#">Customer Service</a>
+            </div>
+
+            <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+            <div class="panel-ops">
+                <p>Today's Deals</p>
+                <p>Customer Service</p>
+                <p>Registry</p>
+                <p>Gift Cards</p>
+                <p>Sell</p>
+                <p>Mobile</p>
+                <p>Electronics</p>
+                <p>Fresh</p>
+                <p>New Releases</p>
+                <p>MX Player</p>
+                <p>Prime</p>
+            </div>
+            <div class="panel-deals">
+                Great Summer Sale | Live Now 
+            </div>
+        </div>
+
+
+    </header>
+
+    <div class="hero-section">
+        <button  class="prev">&#10094;</button>
+        <img id="slider" src="amazo11.jpg">
+        <button class="next">&#10095;</button>
+    </div>
+
+    <div class="shop-section">
+        <div class="box1 box">
+           <div class="box-content">
+                <h2>Shop by brand | Deals on top smartphones</h2>
+                <div class="box-img" style="background-image: url('amazon.jpg');"></div>
+                <p>See all offers</p>
+           </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h2>Health & Personal Care</h2>
+                <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
+                <p>See all offers</p>
+           </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>Health & Personal Care</h2>
+                <div class="box-img" style="background-image: url('box6_image.jpg');"></div>
+                <p>See all offers</p>
+           </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h2>Mobile & Cover</h2>
+                <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
+                <p>See all offers</p>
+           </div>
+        </div>
+
+        <div class="box5 box">
+           <div class="box-content">
+                <h2>Beauty picks</h2>
+                <div class="box-img" style="background-image: url('box5_image.jpg');"></div>
+                <p>See all offers</p>
+           </div>
+        </div>
+        <div class="box6 box">
+            <div class="box-content">
+                <h2>Table & Chair</h2>
+                <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
+                <p>See all offers</p>
+           </div>
+        </div>
+        <div class="box7 box">
+            <div class="box-content">
+                <h2>New arrivals in Toys</h2>
+                <div class="box-img" style="background-image: url('box7_image.jpg');"></div>
+                <p>See all offers</p>
+           </div>
+        </div>
+        <div class="box8 box">
+            <div class="box-content">
+                <h2>Discover fashion trends</h2>
+                <div class="box-img" style="background-image: url('box8_image.jpg');"></div>
+                <p>See all offers</p>
+           </div>
+        </div>
+    </div>
+
+    <div class="big-deals-section">
+        <div class="deals-header">
+            <h2>Up to 80% off | Deals on Amazon Brand & more</h2>
+            <p>See all offers</p>
+        </div>
+
+        <div class="deals-products">
+            <img src="deal1.jpg" alt="">
+            <img src="deal2.jpg" alt="">
+            <img src="deal3.jpg" alt="">
+            <img src="deal4.jpg" alt="">
+            <img src="deal5.jpg" alt="">
+            <img src="deal7.jpg" alt="">
+        </div>
+    </div>
+
+        <!--Mobile Product -->
+    <div class="product-section">
+
+    <div class="section-top">
+        <h2>Up to 40% off | Best Deals on Mobile Accessories</h2>
+        <p>Explore more</p>
+    </div>
+
+    <div class="products">
+
+        <div class="product-card">
+            <img src="mobile1.jpg">
+            <p>Samsung Galaxy S25 Ultra</p>
+        </div>
+
+        <div class="product-card">
+            <img src="mobile2.jpg">
+            <p>iPhone 16</p>
+        </div>
+
+        <div class="product-card">
+            <img src="mobile3.jpg">
+            <p>iQOO Neo 10</p>
+        </div>
+
+        <div class="product-card">
+            <img src="mobile4.jpg">
+            <p>OnePlus Nord 6</p>
+        </div>
+
+        <div class="product-card">
+            <img src="mobile5.jpg">
+            <p>Redmi Note</p>
+        </div>
+
+    </div>
+
+</div>
+        <!--Flight Banner -->
+    <div class="flight-banner"></div>
+
+    <div class="product-section">
+
+    <div class="section-top">
+        <h2>Up to 40% off | Best Deals on Mobile Accessories</h2>
+        <p>Explore more</p>
+    </div>
+
+    <div class="products">
+
+        <div class="product-card">
+            <img src="po1.jpg">
+            <p>Premium store <br> Up to 65% off</p>
+        </div>
+
+        <div class="product-card">
+            <img src="po2.jpg">
+            <p>Headsets <br> Up to 45% off</p>
+        </div>
+
+        <div class="product-card">
+            <img src="po3.jpg">
+            <p>Charging accessories <br> Now up to 70% Off</p>
+        </div>
+
+        <div class="product-card">
+            <img src="po4.jpg">
+            <p>Cases & covers <br> Starting at ₹129</p>
+        </div>
+
+        <div class="product-card">
+            <img src="po5.jpg">
+            <p>Screen protectors</p>
+        </div>
+
+    </div>
+
+    <!--book -->
+    <div class="product-section">
+
+        <div class="section-top">
+            <h2>Up to 60% off | Premium hardcovers</h2>
+            <p>See all offers</p>
+        </div>
+
+        <div class="products">
+
+           <div class="product-card">
+              <img src="book1.jpg">
+           </div>
+
+           <div class="product-card">
+              <img src="book2.jpg">
+           </div>
+
+           <div class="product-card">
+              <img src="book3.jpg">
+           </div>
+
+           <div class="product-card">
+              <img src="book4.jpg">
+           </div>
+
+           <div class="product-card">
+              <img src="book5.jpg">
+           </div>
+
+        </div>
+    </div>
+
+    <!--pool -->
+    <div class="product-section">
+
+        <div class="section-top">
+            <h2>Starting ₹299 | Deals on pools & more</h2>
+            <p>See all offers</p>
+        </div>
+
+        <div class="products">
+
+           <div class="product-card">
+              <img src="pool1.jpg">
+           </div>
+
+           <div class="product-card">
+              <img src="pool2.jpg">
+           </div>
+
+           <div class="product-card">
+              <img src="pool3.jpg">
+           </div>
+
+           <div class="product-card">
+              <img src="pool4.jpg">
+           </div>
+
+           <div class="product-card">
+              <img src="pool5.jpg">
+           </div>
+
+        </div>
+    </div>
+
+    <!--Brand -->
+    <div class="product-section">
+
+        <div class="section-top">
+            <h2>Up to 80% off | Deals on Amazon Brand & more</h2>
+            <p>See all offers</p>
+        </div>
+
+        <div class="products">
+
+           <div class="product-card">
+              <img src="brand1.jpg">
+           </div>
+
+           <div class="product-card">
+              <img src="brand2.jpg">
+           </div>
+
+           <div class="product-card">
+              <img src="brand3.jpg">
+           </div>
+
+           <div class="product-card">
+              <img src="brand4.jpg">
+           </div>
+
+           <div class="product-card">
+              <img src="brand5.jpg">
+           </div>
+
+        </div>
+    </div>
+
+     <!--Scooter--> 
+    <div class="product-section">
+
+        <div class="section-top">
+            <h2>Customer who viewed items in you browsing history also viewed</h2>
+            <p>See all offers</p>
+        </div>
+
+        <div class="products">
+
+           <div class="product-card">
+              <img src="scooter1.jpg">
+              <p>Hero Pleasure+ 110 VX <br>₹73,701</p>
+           </div>
+
+           <div class="product-card">
+              <img src="scooter2.jpg">
+              <p>Hero Pleasure+ XTEC<br>₹77,853</p>
+           </div>
+
+           <div class="product-card">
+              <img src="scooter3.jpg">
+              <p>Hero Destini 110 <br> ₹73,550</p>
+           </div>
+
+           <div class="product-card">
+              <img src="scooter4.jpg">
+              <p>Hero Xoom 125<br>₹86,950</p>
+           </div>
+
+           <div class="product-card">
+              <img src="scooter5.jpg">
+              <p>Hero 125<br>₹78,150</p> 
+           </div>
+
+        </div>
+    </div>
+
+    
+
+    <div class="signin-section">
+        <div class="signin-box">
+            <h2>See personalized recommendations</h2>
+            <button>Sign in</button>
+
+            <p>
+                New customer?
+                <a href="#">Start here.</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="foot-panel1">
+        Back to top
+    </div>
+</div>
+<footer class="footer">
+  <div class="footer-content">
+
+    <div class="footer-box">
+      <h3>Get to Know Us</h3>
+      <a href="#">About Amazon</a>
+      <a href="#">Careers</a>
+      <a href="#">Press Releases</a>
+      <a href="#">Amazon Science</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Connect with Us</h3>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Make Money with Us</h3>
+      <a href="#">Sell on Amazon</a>
+      <a href="#">Amazon Global Selling</a>
+      <a href="#">Become an Affiliate</a>
+      <a href="#">Advertise Your Products</a>
+      <a href="#">Supply to Amazon</a>
+      <a href="#">Fulfilment by Amazon</a>
+      <a href="#">Advertise Your Products</a>
+      <a href="#">Amazon Pay on Merchants</a>
+
+    </div>
+
+    <div class="footer-box">
+      <h3>Let Us Help You</h3>
+      <a href="#">Your Account</a>
+      <a href="#">Returns Centre</a>
+      <a href="#">Purchase Protection</a>
+      <a href="#">100% Purchase Protection</a>
+      <a href="#">Amazon App Download</a>
+      <a href="#">Help</a>
+    </div>
+
+  </div>
+
+  </div> <!-- footer-content end -->
+
+<!-- YAHAN ADD KARO -->
+<div class="footer-middle">
+    <div class="footer-logo">
+        <img src="amazon_logo.png" alt="Amazon Logo">
+    </div>
+
+    <div class="footer-options">
+        <button class="footer-btn">🌐 English</button>
+        <button class="footer-btn"> India</button>
+    </div>
+</div>
+
+<div class="footer-bottom">
+
+    <div class="footer-links">
+
+        <div>
+            <h4>AbeBooks</h4>
+            <p>Books, art<br>& collectibles</p>
+        </div>
+
+        <div>
+            <h4>Amazon Web Services</h4>
+            <p>Scalable Cloud<br>Computing Services</p>
+        </div>
+
+        <div>
+            <h4>Audible</h4>
+            <p>Download<br>Audio Books</p>
+        </div>
+
+        <div>
+            <h4>IMDb</h4>
+            <p>Movies, TV<br>& Celebrities</p>
+        </div>
+
+        <div>
+            <h4>Shopbop</h4>
+            <p>Designer<br>Fashion Brands</p>
+        </div>
+
+        <div>
+            <h4>Amazon Business</h4>
+            <p>Everything For<br>Your Business</p>
+        </div>
+
+        <div>
+            <h4>Amazon Music</h4>
+            <p>Stream millions of<br>songs</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <a href="#">Conditions of Use & Sale</a>
+        <a href="#">Privacy Notice</a>
+        <a href="#">Interest-Based Ads</a>
+
+        <p>© 1996-2026, Amazon.com, Inc. or its affiliates</p>
+    </div>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
