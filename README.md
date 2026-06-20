@@ -23,8 +23,9 @@ https://github.com/SatyamKumar1232/amazon-clone
 - Git & GitHub
 - GitHub Pages
 
-## 📸 Screenshots
-(Add screenshots of your project here)
+## 📸 Screenshot
+![Amazon Clone Screenshot]
+(screenshot.png)
 
 ## 👨‍💻 Author
 **Satyam Kumar**
